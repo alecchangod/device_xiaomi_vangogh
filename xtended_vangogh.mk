@@ -38,3 +38,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="vangogh-user 11 RKQ1.200826.002 V12.1.7.0.RJVCNXM release-keys"
 
 BUILD_FINGERPRINT := google/cheetah/cheetah:13/TD1A.220804.031/9071314:user/release-keys
+
+# Include firmware
+$(call inherit-product, vendor/xiaomi-firmware/vangogh/firmware.mk)
