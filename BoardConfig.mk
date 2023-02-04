@@ -16,6 +16,7 @@ TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/vangogh_user_defconfig
+TARGET_KERNEL_OPTIONAL_LD := true
 
 # Inherit from the proprietary version
 include vendor/xiaomi/vangogh/BoardConfigVendor.mk
