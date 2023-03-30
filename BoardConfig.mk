@@ -11,12 +11,21 @@ DEVICE_PATH := device/xiaomi/vangogh
 
 BUILD_BROKEN_DUP_RULES := true
 
+# A/B
+TARGET_IS_VAB := false
+
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := lito
+
 # Display
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/vangogh_user_defconfig
 TARGET_KERNEL_OPTIONAL_LD := true
+
+# SoC
+PROCESSOR_MODEL := SM7250
 
 # Inherit from the proprietary version
 include vendor/xiaomi/vangogh/BoardConfigVendor.mk
